@@ -37,7 +37,7 @@ Se seguirá el enfoque TDSP (Team Data Science Process), estructurado en las fas
 | Preprocesamiento, análisis exploratorio | 3 semanas | del 29 de abril al 16 de mayo |
 | Modelamiento y extracción de características | 2 semanas | del 16 de mayo al 30 de mayo |
 | Despliegue | 2 semanas | del 30 de mayo al 6 de junio |
-| Evaluación y entrega final | 3 semanas | del 6 de junio al 20 de junio |
+| Evaluación y entrega final | 3 semanas | del 6 de junio al 27 de junio |
 
 > Nota: Las fechas deben ajustarse si se modifica el calendario de trabajo.
 
