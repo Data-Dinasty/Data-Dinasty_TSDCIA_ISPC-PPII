@@ -66,6 +66,6 @@ Expectativas:
 
 ## Aprobaciones
 
-- [Nombre del aprobador]: [Por asignar]
+- [Nombre del aprobador]: Carlos Ignacio CHARLETTI
 - [Firma del aprobador]: ___________________
 - [Fecha de aprobación]: ___________________

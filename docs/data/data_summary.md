@@ -1,6 +1,5 @@
 # Reporte de Datos
 
-
 ## Resumen general de los datos
 
 ## Resumen de calidad de los datos
