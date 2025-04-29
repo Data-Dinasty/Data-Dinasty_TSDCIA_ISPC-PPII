@@ -43,10 +43,10 @@ Se seguirá el enfoque TDSP (Team Data Science Process), estructurado en las fas
 
 ## Equipo del Proyecto
 
-- **Project Manager**: [Por asignar] – Responsable de la coordinación general del proyecto.
-- **Data Engineer**: [Por asignar] – Responsable de la carga, limpieza y transformación de datos.
-- **Data Scientist**: [Por asignar] – Encargado del desarrollo y evaluación de modelos.
-- **Ethical Reviewer**: [Por asignar] – Responsable de la evaluación de equidad y sesgos.
+- *Project Manager*: Federico Gurrea – Responsable de la coordinación general del proyecto.
+- *Data Engineer*: Dante Javier Pagano, Laura Peralta – Responsable de la carga, limpieza y transformación de datos.
+- *Data Scientist*: Juan Marcelo Molina, Julieta Battauz – Encargado del desarrollo y evaluación de modelos.
+- *Ethical Reviewer*: Eugenia Barozzi – Responsable de la evaluación de equidad y sesgos.
 
 ## Presupuesto
 
