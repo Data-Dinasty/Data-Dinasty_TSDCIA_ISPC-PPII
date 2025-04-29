@@ -10,12 +10,10 @@ Construir un modelo predictivo eficaz y justo que permita detectar tempranamente
 
 ## 👥 Roles del Proyecto
 
-- **Project Manager**
-- **Data Engineer**
-- **Data Scientist**  Marcelo Molina,
-- **Ethical Reviewer**
-
-*(Asignación de nombres pendiente.)*
+- *Project Manager*: Julieta Battauz
+- *Data Engineer*: Dante Javier Pagano, Laura Peralta
+- *Data Scientist*: Juan Marcelo Molina, Federico Gurrea
+- *Ethical Reviewer*: Eugenia Barozzi
 
 ## 📄 Documentación
 
