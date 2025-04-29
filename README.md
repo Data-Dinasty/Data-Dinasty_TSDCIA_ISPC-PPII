@@ -12,7 +12,7 @@ Construir un modelo predictivo eficaz y justo que permita detectar tempranamente
 
 - **Project Manager**
 - **Data Engineer**
-- **Data Scientist**Marcelo Molina,
+- **Data Scientist**  Marcelo Molina,
 - **Ethical Reviewer**
 
 *(Asignación de nombres pendiente.)*
