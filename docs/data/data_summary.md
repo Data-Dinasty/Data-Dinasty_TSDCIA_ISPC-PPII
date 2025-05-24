@@ -24,14 +24,23 @@ La variable objetivo es stroke, que indica si una persona ha sufrido un accident
 
 ## Ranking de variables
 1 age
+
 2 avg_glucose_level
+
 3 bmi
+
 4 hypertension
+
 5 heart_disease
+
 6 ever_married
+
 7 smoking_status
+
 8 work_type
+
 9 Residence_type
+
 10 gender
 
 ## Relación entre variables explicativas y variable objetivo
