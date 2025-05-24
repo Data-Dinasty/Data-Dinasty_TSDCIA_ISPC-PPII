@@ -43,5 +43,7 @@ La variable objetivo es stroke, que indica si una persona ha sufrido un accident
 
 10 gender
 
+(Este ranking fue calculado utilizando un modelo Random Forest básico tras codificar las variables categóricas.)
+
 ## Relación entre variables explicativas y variable objetivo
 Se observa una fuerte asociación entre la edad, nivel de glucosa y antecedentes de hipertensión/enfermedades cardíacas con la presencia de ACV. A mayor edad y mayor glucosa, aumenta el riesgo de sufrir un ACV. También existe una mayor proporción de ACV en personas casadas y con ciertos tipos de empleo (como quienes nunca trabajaron). Las variables como gender y Residence_type muestran baja correlación con la variable objetivo.
