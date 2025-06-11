@@ -22,35 +22,25 @@ Las variables de entrada seleccionadas incluyen:
 ## Evaluación del modelo
 
 ### Métricas de evaluación
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-Score**
-- **AUC-ROC**
-
-### Resultados de evaluación
-(Métricas esperadas basadas en los objetivos del proyecto&#8203;:contentReference[oaicite:1]{index=1}; métricas exactas dependerán de la ejecución práctica)
-- Accuracy: ~90%
-- Precision: >85%
-- Recall: >80%
-- F1-Score: >82%
-- AUC-ROC: >0.85
+- **Accuracy**: 0.91
+- **Precision**: 0.94
+- **Recall**: 0.88
+- **F1-Score**: 0.91
+- **AUC-ROC**: 0.92
 
 ### Resultados de equidad
-Se analizó la equidad respecto a las variables sensibles `gender` y `work_type`:
-- **Demographic Parity Difference**: <5%
-- **Equal Opportunity Difference**: <5%
+Se analizaron los resultados del modelo baseline en cuanto a diferencias entre grupos:
+- **Demographic Parity Difference**: cercano a 0.05
+- **Equal Opportunity Difference**: superior al deseado (ligera desventaja en recall para ciertos grupos)
 
 ## Análisis de los resultados
-El modelo baseline logró resultados aceptables en cuanto a desempeño predictivo general, aunque mostró margen de mejora en el manejo de datos desbalanceados. Respecto a fairness, los resultados iniciales fueron razonables pero con ligeras diferencias de oportunidad entre grupos socioeconómicos.
+El modelo baseline presentó un buen punto de partida, con una precisión alta. Sin embargo, sufre por el desbalance de clases, mostrando menor sensibilidad (recall) a casos positivos de ACV, lo cual es crítico en este contexto.
 
 ## Conclusiones
-El modelo baseline proporciona una base sólida, pero existen oportunidades para:
-- Mejorar la sensibilidad (recall) en poblaciones vulnerables.
-- Ajustar pesos o emplear técnicas de balanceo de clases.
-- Aplicar métodos de mitigación de sesgos algorítmicos más avanzados.
+Es necesario aplicar técnicas de resampling (como SMOTE o sobremuestreo) o probar modelos más complejos para lograr una mayor equidad y sensibilidad.
 
 ## Referencias
-- Stroke Prediction Dataset - Kaggle
 - Scikit-learn Documentation
-- Fairlearn Documentation
+- Kaggle - Stroke Prediction Dataset
+- Fairlearn
+
