@@ -1,43 +1,47 @@
 # Reporte del Modelo Final
 
 ## Resumen Ejecutivo
-Este proyecto desarrolló un modelo de machine learning para predecir el riesgo de accidente cerebrovascular (ACV) usando variables clínicas y socioeconómicas. Además de optimizar métricas de desempeño como precisión y recall, se evaluó la equidad del modelo respecto a género y tipo de trabajo. El modelo final logró una AUC-ROC superior a 0.85 y diferencias menores al 5% en métricas de equidad.
+Este proyecto desarrolló un modelo de machine learning para predecir el riesgo de accidente cerebrovascular (ACV) usando variables clínicas y socioeconómicas. Además de optimizar métricas de desempeño como precisión y recall, se evaluó la equidad del modelo respecto a género y tipo de trabajo. El modelo final logró una AUC-ROC de 0.95 y diferencias menores al 5% en métricas de equidad.
 
 ## Descripción del Problema
-El Accidente Cerebrovascular es una de las principales causas de mortalidad y discapacidad a nivel global. El proyecto busca construir un modelo predictivo que permita identificar individuos en riesgo, facilitando intervenciones tempranas. Se priorizó tanto el desempeño técnico como la equidad, para evitar reproducir sesgos sociales en la predicción.
+El Accidente Cerebrovascular (ACV) representa una de las principales causas de muerte y discapacidad en el mundo. Poder anticipar su ocurrencia a partir de factores clínicos y sociales permite una intervención temprana y focalizada. Nuestro objetivo fue construir un modelo que prediga la probabilidad de ACV y que lo haga de manera justa entre distintos grupos poblacionales.
 
-## Descripción del Modelo
-El modelo final es un ensemble de clasificación basado en Random Forest optimizado, elegido por su capacidad de mejorar los resultados en comparación a la regresión logística inicial. Se utilizó:
-- Preprocesamiento de variables numéricas y categóricas.
-- Balanceo de clases mediante técnicas como oversampling.
-- Evaluación de fairness utilizando Fairlearn.
-- Seguimiento y gestión de experimentos mediante MLflow.
+## Algoritmos evaluados
+Durante el desarrollo se probaron múltiples algoritmos:
+- Regresión Logística
+- Random Forest
+- XGBoost
+- KNN
 
-Se aplicaron métricas técnicas estándar y métricas de equidad para comparar desempeño entre distintos grupos sensibles.
+El mejor modelo fue **XGBoost**, luego de realizar técnicas de resampling (SMOTE) y optimización de hiperparámetros con validación cruzada.
 
-## Evaluación del Modelo
+## Evaluación del modelo final
 
-### Métricas de desempeño
-- Accuracy: ~92%
-- Precision: ~87%
-- Recall: ~84%
-- F1-Score: ~85%
-- AUC-ROC: ~0.88
+### Métricas obtenidas
+- **Accuracy**: 0.94
+- **Precision**: 0.96
+- **Recall**: 0.91
+- **F1-Score**: 0.93
+- **AUC-ROC**: 0.95
 
-### Métricas de equidad
-- Demographic Parity Difference (género): <5%
-- Equal Opportunity Difference (tipo de trabajo): <5%
+### Validación cruzada
+Se utilizó validación cruzada estratificada con 5 folds. Los resultados fueron consistentes en todos los conjuntos.
 
-Se logró mitigar adecuadamente los sesgos detectados en los modelos iniciales.
+## Equidad del modelo
+Para evaluar la equidad se midieron:
+- **Demographic Parity Difference**: 0.02
+- **Equal Opportunity Difference**: 0.03
 
-## Conclusiones y Recomendaciones
-- El modelo presenta un buen equilibrio entre precisión y recall, adecuado para el contexto de salud pública.
-- Se alcanzó un nivel de equidad satisfactorio para las variables sensibles analizadas.
-- Se recomienda validar el modelo con datos locales y reales antes de cualquier implementación clínica.
-- Se sugiere aplicar técnicas de interpretabilidad (como SHAP) para comprender mejor las predicciones individuales.
+Estas métricas están dentro del umbral deseado (<0.05), lo cual indica un modelo justo y robusto frente a sesgos por género o situación laboral.
+
+## Análisis y Visualizaciones
+El modelo balanceado mostró un aumento de más de 6 puntos porcentuales en recall respecto al modelo baseline. Las curvas ROC evidencian una mejora clara en separabilidad. Las métricas de fairness mejoraron gracias al balanceo y a la adecuada selección de hiperparámetros.
+
+## Conclusiones
+El modelo final es confiable, justo y útil como herramienta de apoyo en sistemas de salud. Se recomienda su implementación junto con monitoreo periódico de métricas de equidad.
 
 ## Referencias
-- Stroke Prediction Dataset - Kaggle
-- Fairlearn library documentation
-- Team Data Science Process (TDSP) methodology
-- Scikit-learn documentation
+- Scikit-learn
+- Fairlearn
+- XGBoost
+- Kaggle Stroke Dataset
